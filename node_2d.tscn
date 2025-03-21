@@ -24,8 +24,8 @@ offset_bottom = 329.0
 text = "Exit"
 
 [node name="Label" type="Label" parent="."]
-offset_left = 327.0
-offset_top = 197.0
-offset_right = 764.0
-offset_bottom = 300.0
+offset_left = 55.0
+offset_top = 22.0
+offset_right = 492.0
+offset_bottom = 125.0
 text = "Пиздатая игра"
