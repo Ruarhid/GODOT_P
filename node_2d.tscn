@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://ckqrd1aj6yt5g"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Button" type="Button" parent="."]
+offset_left = 56.0
+offset_top = 142.0
+offset_right = 155.0
+offset_bottom = 195.0
+text = "Play"
+
+[node name="Button2" type="Button" parent="."]
+offset_left = 56.0
+offset_top = 209.0
+offset_right = 155.0
+offset_bottom = 262.0
+text = "Settings"
+
+[node name="Button3" type="Button" parent="."]
+offset_left = 56.0
+offset_top = 276.0
+offset_right = 155.0
+offset_bottom = 329.0
+text = "Exit"
+
+[node name="Label" type="Label" parent="."]
+offset_left = 112.0
+offset_top = 26.0
+offset_right = 549.0
+offset_bottom = 129.0
+text = "Пиздатая игра"
