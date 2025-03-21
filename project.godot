@@ -14,3 +14,7 @@ config/name="Новый игровой проект"
 run/main_scene="uid://ckqrd1aj6yt5g"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
+
+[dotnet]
+
+project/assembly_name="Новый игровой проект"
