@@ -11,10 +11,6 @@ config_version=5
 [application]
 
 config/name="Новый игровой проект"
-run/main_scene="uid://d4buxj1x4un48"
+run/main_scene="uid://m71ahvkoq46n"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
-
-[dotnet]
-
-project/assembly_name="Новый игровой проект"
