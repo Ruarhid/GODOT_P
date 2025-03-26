@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://bm45k3js622gi"]
+[gd_scene load_steps=3 format=3 uid="uid://bm45k3js622gi"]
 
 [ext_resource type="Script" uid="uid://c1lm5i806317y" path="res://scripts/options_menu.gd" id="1_ta2k2"]
+[ext_resource type="Texture2D" uid="uid://bpfwefef3shr2" path="res://assets/gradient_pixel_art_style_sgzvbqi6m3wekqz4kdj6_2.png" id="2_wj2x4"]
 
 [node name="OptionsMenu" type="Control"]
 layout_mode = 3
@@ -12,9 +13,13 @@ grow_vertical = 2
 script = ExtResource("1_ta2k2")
 
 [node name="TextureRect" type="TextureRect" parent="."]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_wj2x4")
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 1
