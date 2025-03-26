@@ -1,7 +1,7 @@
 # scripts/options_menu.gd
 class_name OptionsMenu
 extends Control
-
+# Объявление и инициализация кнопок
 @onready var resolution_dropdown: OptionButton = %Resolution
 @onready var fullscreen_checkbox: CheckBox = %Fullscreen
 @onready var master_volume: HSlider = %MasterVolume

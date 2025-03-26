@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://m71ahvkoq46n"]
+[gd_scene load_steps=4 format=3 uid="uid://m71ahvkoq46n"]
 
 [ext_resource type="Script" uid="uid://b2r0b02fhi1ug" path="res://scripts/main_menu.gd" id="1_fe2o3"]
 [ext_resource type="Texture2D" uid="uid://bpfwefef3shr2" path="res://assets/gradient_pixel_art_style_sgzvbqi6m3wekqz4kdj6_2.png" id="2_1g8jr"]
+[ext_resource type="AudioStream" uid="uid://bo6rj83knxd0e" path="res://assets/audio/e313261e08a02c5.mp3" id="3_1g8jr"]
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3
@@ -93,3 +94,6 @@ custom_minimum_size = Vector2(40, 0)
 layout_mode = 2
 theme_override_font_sizes/font_size = 30
 text = "Exit"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_1g8jr")
