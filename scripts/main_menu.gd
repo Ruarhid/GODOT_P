@@ -10,7 +10,7 @@ extends Control
 # Путь к сценам
 const OPTIONS_SCENE: String = "res://scenes/ui/options_menu.tscn"
 const ABOUT_SCENE: String = "res://scenes/about.tscn"
-const GAME_SCENE: String = "res://scenes/world.tscn"
+const GAME_SCENE: String = "res://scenes/level.tscn"
 
 # Фоновое изображение
 @onready var background: TextureRect = $Background
