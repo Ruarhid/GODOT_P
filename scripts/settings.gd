@@ -26,7 +26,7 @@ const DEFAULT_CONFIG: Dictionary = {
 var config: Dictionary = DEFAULT_CONFIG.duplicate(true)
 
 # Путь к файлу конфигурации
-const CONFIG_PATH: String = "user://settings.cfg"
+const CONFIG_PATH: String = "res://settings.cfg"
 
 # Инициализация при загрузке синглтона
 func _ready() -> void:
@@ -44,6 +44,8 @@ func load_settings() -> void:
 			for key in DEFAULT_CONFIG[section].keys():
 				if file.has_section_key(section, key):
 					config[section][key] = file.get_value(section, key)
+	#КОСТЫЛЬ!!!
+	apply_settings()
 
 # Сохранение настроек в файл
 func save_settings() -> void:
