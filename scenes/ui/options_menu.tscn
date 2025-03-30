@@ -55,17 +55,29 @@ unique_name_in_owner = true
 layout_mode = 2
 text = "Fullscreen"
 
+[node name="LabelMaster" type="Label" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Master Volume"
+
 [node name="MasterVolume" type="HSlider" parent="MarginContainer/VBoxContainer"]
 unique_name_in_owner = true
 layout_mode = 2
 max_value = 1.0
 step = 0.01
 
+[node name="LabelMusic" type="Label" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Music Volume"
+
 [node name="MusicVolume" type="HSlider" parent="MarginContainer/VBoxContainer"]
 unique_name_in_owner = true
 layout_mode = 2
 max_value = 1.0
 step = 0.01
+
+[node name="LabelSFX" type="Label" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "SFX Volume"
 
 [node name="SFXVolume" type="HSlider" parent="MarginContainer/VBoxContainer"]
 unique_name_in_owner = true
