@@ -24,6 +24,7 @@ MusicManager="*res://scenes/ui/Music_Manager.tscn"
 
 window/size/viewport_width=1140
 window/size/viewport_height=640
+window/size/resizable=false
 window/size/window_width_override=1080
 window/size/window_height_override=720
 window/stretch/mode="viewport"

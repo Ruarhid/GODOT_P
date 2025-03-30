@@ -1,7 +1,16 @@
-[gd_scene load_steps=3 format=3 uid="uid://bm45k3js622gi"]
+[gd_scene load_steps=9 format=3 uid="uid://bm45k3js622gi"]
 
 [ext_resource type="Script" uid="uid://c1lm5i806317y" path="res://scripts/options_menu.gd" id="1_ta2k2"]
 [ext_resource type="Texture2D" uid="uid://bpfwefef3shr2" path="res://assets/gradient_pixel_art_style_sgzvbqi6m3wekqz4kdj6_2.png" id="2_wj2x4"]
+[ext_resource type="Theme" uid="uid://civeh5r7otc1" path="res://new_theme.tres" id="3_0ejsc"]
+[ext_resource type="FontVariation" uid="uid://t8xrxthqd5x4" path="res://new_font_variation.tres" id="3_c4822"]
+[ext_resource type="StyleBox" uid="uid://j3imwqa0euwr" path="res://button_style_box_flat.tres" id="3_imaij"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_snsgv"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_c4822"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0ejsc"]
 
 [node name="OptionsMenu" type="Control"]
 layout_mode = 3
@@ -17,6 +26,10 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = -22.0
+offset_top = -128.0
+offset_right = 22.0
+offset_bottom = 128.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("2_wj2x4")
@@ -37,11 +50,14 @@ theme_override_constants/margin_bottom = 50
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
-theme_override_constants/separation = 20
+theme = ExtResource("3_0ejsc")
+theme_override_constants/separation = 9
 
 [node name="Options" type="Label" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
-theme_override_font_sizes/font_size = 40
+theme_override_constants/outline_size = 4
+theme_override_fonts/font = ExtResource("3_c4822")
+theme_override_font_sizes/font_size = 70
 text = "Options"
 horizontal_alignment = 1
 
@@ -49,14 +65,28 @@ horizontal_alignment = 1
 unique_name_in_owner = true
 custom_minimum_size = Vector2(300, 40)
 layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 35
+theme_override_styles/focus = SubResource("StyleBoxEmpty_snsgv")
+theme_override_styles/disabled = ExtResource("3_imaij")
+theme_override_styles/hover_pressed = ExtResource("3_imaij")
+theme_override_styles/hover = ExtResource("3_imaij")
+theme_override_styles/pressed = ExtResource("3_imaij")
+theme_override_styles/normal = ExtResource("3_imaij")
+alignment = 1
 
 [node name="Fullscreen" type="CheckBox" parent="MarginContainer/VBoxContainer"]
 unique_name_in_owner = true
 layout_mode = 2
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 25
 text = "Fullscreen"
 
 [node name="LabelMaster" type="Label" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 25
 text = "Master Volume"
 
 [node name="MasterVolume" type="HSlider" parent="MarginContainer/VBoxContainer"]
@@ -67,6 +97,8 @@ step = 0.01
 
 [node name="LabelMusic" type="Label" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 25
 text = "Music Volume"
 
 [node name="MusicVolume" type="HSlider" parent="MarginContainer/VBoxContainer"]
@@ -77,6 +109,8 @@ step = 0.01
 
 [node name="LabelSFX" type="Label" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 25
 text = "SFX Volume"
 
 [node name="SFXVolume" type="HSlider" parent="MarginContainer/VBoxContainer"]
@@ -88,14 +122,47 @@ page = 0.01
 [node name="ResetButton" type="Button" parent="MarginContainer/VBoxContainer"]
 unique_name_in_owner = true
 layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 4
+theme_override_fonts/font = ExtResource("3_c4822")
+theme_override_font_sizes/font_size = 35
+theme_override_styles/focus = SubResource("StyleBoxEmpty_c4822")
+theme_override_styles/disabled = ExtResource("3_imaij")
+theme_override_styles/hover_pressed = ExtResource("3_imaij")
+theme_override_styles/hover = ExtResource("3_imaij")
+theme_override_styles/pressed = ExtResource("3_imaij")
+theme_override_styles/normal = ExtResource("3_imaij")
 text = "Reset"
 
 [node name="SaveButton" type="Button" parent="MarginContainer/VBoxContainer"]
 unique_name_in_owner = true
 layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 4
+theme_override_fonts/font = ExtResource("3_c4822")
+theme_override_font_sizes/font_size = 35
+theme_override_styles/focus = SubResource("StyleBoxEmpty_0ejsc")
+theme_override_styles/disabled = ExtResource("3_imaij")
+theme_override_styles/hover_pressed = ExtResource("3_imaij")
+theme_override_styles/hover = ExtResource("3_imaij")
+theme_override_styles/pressed = ExtResource("3_imaij")
+theme_override_styles/normal = ExtResource("3_imaij")
 text = "Save"
 
 [node name="BackButton" type="Button" parent="MarginContainer/VBoxContainer"]
 unique_name_in_owner = true
 layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 4
+theme_override_fonts/font = ExtResource("3_c4822")
+theme_override_font_sizes/font_size = 35
+theme_override_styles/focus = SubResource("StyleBoxEmpty_0ejsc")
+theme_override_styles/disabled = ExtResource("3_imaij")
+theme_override_styles/hover_pressed = ExtResource("3_imaij")
+theme_override_styles/hover = ExtResource("3_imaij")
+theme_override_styles/pressed = ExtResource("3_imaij")
+theme_override_styles/normal = ExtResource("3_imaij")
 text = "Closed"
