@@ -18,51 +18,27 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -16.0
-offset_top = -124.0
-offset_right = 16.0
-offset_bottom = 124.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("2_1g8jr")
 
-[node name="TitleLable" type="Label" parent="."]
-layout_mode = 1
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = -180.0
-offset_top = 95.0
-offset_right = 180.0
-offset_bottom = 160.0
-grow_horizontal = 2
-theme = ExtResource("3_1g8jr")
-theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
-theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
-theme_override_constants/outline_size = 10
-theme_override_constants/shadow_outline_size = 12
-theme_override_font_sizes/font_size = 90
-text = "Туда сюда игра!"
-horizontal_alignment = 1
-vertical_alignment = 1
-
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -195.0
+offset_top = -195.0
+offset_right = 195.0
+offset_bottom = 195.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/margin_left = 20
 theme_override_constants/margin_top = 20
 theme_override_constants/margin_right = 20
 theme_override_constants/margin_bottom = 20
-
-[node name="VersionLable" type="Label" parent="MarginContainer"]
-layout_mode = 2
-size_flags_horizontal = 0
-size_flags_vertical = 8
-text = "version 0.0.0"
 
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
 custom_minimum_size = Vector2(250, 350)
@@ -83,7 +59,6 @@ unique_name_in_owner = true
 custom_minimum_size = Vector2(40, 0)
 layout_mode = 2
 theme = ExtResource("3_1g8jr")
-theme_override_font_sizes/font_size = 30
 text = "Play"
 
 [node name="OptionsButton" type="Button" parent="MarginContainer/VBoxContainer/MenuButtons"]
@@ -91,7 +66,6 @@ unique_name_in_owner = true
 custom_minimum_size = Vector2(40, 0)
 layout_mode = 2
 theme = ExtResource("3_1g8jr")
-theme_override_font_sizes/font_size = 30
 text = "Options"
 
 [node name="AboutButton" type="Button" parent="MarginContainer/VBoxContainer/MenuButtons"]
@@ -99,7 +73,6 @@ unique_name_in_owner = true
 custom_minimum_size = Vector2(40, 0)
 layout_mode = 2
 theme = ExtResource("3_1g8jr")
-theme_override_font_sizes/font_size = 30
 text = "About"
 
 [node name="ExitButton" type="Button" parent="MarginContainer/VBoxContainer/MenuButtons"]
@@ -107,5 +80,33 @@ unique_name_in_owner = true
 custom_minimum_size = Vector2(40, 0)
 layout_mode = 2
 theme = ExtResource("3_1g8jr")
-theme_override_font_sizes/font_size = 30
 text = "Exit"
+
+[node name="VersionLable" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -18.0
+offset_right = 74.0
+grow_vertical = 0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "version 0.0.0"
+
+[node name="TitleLable" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 102.0
+grow_horizontal = 2
+size_flags_vertical = 0
+theme = ExtResource("3_1g8jr")
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_constants/shadow_outline_size = 12
+theme_override_font_sizes/font_size = 90
+text = "Туда сюда игра!"
+horizontal_alignment = 1
+vertical_alignment = 1

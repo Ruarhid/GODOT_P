@@ -26,8 +26,9 @@ MusicManager="*res://scenes/ui/Music_Manager.tscn"
 
 [display]
 
-window/size/viewport_width=1140
-window/size/viewport_height=640
+window/size/viewport_width=1280
+window/size/viewport_height=720
+window/size/mode=4
 window/size/resizable=false
 window/size/window_width_override=1080
 window/size/window_height_override=720
@@ -36,3 +37,7 @@ window/stretch/mode="viewport"
 [gui]
 
 theme/custom_font="uid://bb0ac0gpqum02"
+
+[rendering]
+
+textures/canvas_textures/default_texture_filter=0

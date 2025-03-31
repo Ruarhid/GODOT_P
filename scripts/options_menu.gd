@@ -13,6 +13,7 @@ extends Control
 @onready var back_button: Button = %BackButton
 
 const RESOLUTIONS: Array[Vector2i] = [
+	Vector2i(640, 480),
 	Vector2i(1280, 720),
 	Vector2i(1920, 1080),
 	Vector2i(2560, 1440)

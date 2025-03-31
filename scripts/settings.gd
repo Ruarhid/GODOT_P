@@ -68,7 +68,7 @@ func reset_to_default() -> void:
 func apply_settings() -> void:
 	# Настройки дисплея
 	DisplayServer.window_set_mode(
-		DisplayServer.WINDOW_MODE_FULLSCREEN if config["display"]["fullscreen"] else DisplayServer.WINDOW_MODE_WINDOWED
+		DisplayServer.WINDOW_MODE_EXCLUSIVE_FULLSCREEN if config["display"]["fullscreen"] else DisplayServer.WINDOW_MODE_WINDOWED
 	)
 	DisplayServer.window_set_size(config["display"]["resolution"])
 	
@@ -91,3 +91,4 @@ func apply_settings() -> void:
 	print("Master index ", AudioServer.get_bus_index("Master"))
 	print("Music index ", AudioServer.get_bus_index("Music"))
 	print("SFX index ", AudioServer.get_bus_index("SFX"))
+	print("Текущий режим окна: ", DisplayServer.window_get_mode())
