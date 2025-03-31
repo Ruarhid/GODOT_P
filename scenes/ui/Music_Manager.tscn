@@ -13,3 +13,4 @@ bus = &"Music"
 
 [node name="ClickSound" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("3_usgy1")
+bus = &"SFX"
