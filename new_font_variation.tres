@@ -1,7 +1,0 @@
-[gd_resource type="FontVariation" load_steps=2 format=3 uid="uid://t8xrxthqd5x4"]
-
-[ext_resource type="FontFile" uid="uid://ob3wrshp05te" path="res://Pixel Game.otf" id="1_ej4o4"]
-
-[resource]
-base_font = ExtResource("1_ej4o4")
-spacing_glyph = 5

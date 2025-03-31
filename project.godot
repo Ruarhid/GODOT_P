@@ -15,6 +15,10 @@ run/main_scene="uid://m71ahvkoq46n"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
 
+[audio]
+
+buses/default_bus_layout=""
+
 [autoload]
 
 Settings="*res://scripts/settings.gd"
@@ -28,3 +32,7 @@ window/size/resizable=false
 window/size/window_width_override=1080
 window/size/window_height_override=720
 window/stretch/mode="viewport"
+
+[gui]
+
+theme/custom_font="uid://bb0ac0gpqum02"

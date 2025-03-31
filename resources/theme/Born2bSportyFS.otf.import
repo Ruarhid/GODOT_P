@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://ob3wrshp05te"
-path="res://.godot/imported/Pixel Game.otf-8dfda131e064969ad0ed5e1be42254e5.fontdata"
+uid="uid://bb0ac0gpqum02"
+path="res://.godot/imported/Born2bSportyFS.otf-17ebe999b745b898bcd8115f0d83aeac.fontdata"
 
 [deps]
 
-source_file="res://Pixel Game.otf"
-dest_files=["res://.godot/imported/Pixel Game.otf-8dfda131e064969ad0ed5e1be42254e5.fontdata"]
+source_file="res://resources/theme/Born2bSportyFS.otf"
+dest_files=["res://.godot/imported/Born2bSportyFS.otf-17ebe999b745b898bcd8115f0d83aeac.fontdata"]
 
 [params]
 

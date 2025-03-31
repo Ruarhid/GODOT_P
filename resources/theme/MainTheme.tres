@@ -1,0 +1,70 @@
+[gd_resource type="Theme" load_steps=12 format=3 uid="uid://cjawy8cb27n0v"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_d0jhy"]
+bg_color = Color(0.862745, 0.85098, 0.72549, 1)
+border_width_bottom = 10
+border_color = Color(0.568973, 0.568973, 0.568973, 0.807843)
+border_blend = true
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+shadow_color = Color(0.374139, 0.374139, 0.374139, 0.67451)
+shadow_size = 3
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_x238d"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vifa4"]
+bg_color = Color(0.862745, 0.85098, 0.72549, 1)
+border_width_bottom = 7
+border_color = Color(0.568973, 0.568973, 0.568973, 0.807843)
+border_blend = true
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+shadow_color = Color(0.374139, 0.374139, 0.374139, 0.67451)
+shadow_size = 3
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_d0jhy"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vifa4"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_otkdr"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_l2l21"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_w4u27"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_kow7t"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_qdg3w"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_x238d"]
+draw_center = false
+
+[resource]
+Button/constants/outline_size = 3
+Button/font_sizes/font_size = 40
+Button/styles/disabled = SubResource("StyleBoxFlat_d0jhy")
+Button/styles/focus = SubResource("StyleBoxEmpty_x238d")
+Button/styles/hover = SubResource("StyleBoxFlat_d0jhy")
+Button/styles/normal = SubResource("StyleBoxFlat_d0jhy")
+Button/styles/pressed = SubResource("StyleBoxFlat_vifa4")
+CheckBox/font_sizes/font_size = 20
+CheckBox/styles/disabled = SubResource("StyleBoxEmpty_d0jhy")
+CheckBox/styles/focus = SubResource("StyleBoxEmpty_vifa4")
+CheckBox/styles/hover = SubResource("StyleBoxEmpty_otkdr")
+CheckBox/styles/hover_pressed = SubResource("StyleBoxEmpty_l2l21")
+CheckBox/styles/normal = SubResource("StyleBoxEmpty_w4u27")
+CheckBox/styles/pressed = SubResource("StyleBoxEmpty_kow7t")
+CheckButton/styles/disabled = SubResource("StyleBoxEmpty_qdg3w")
+CheckButton/styles/focus = SubResource("StyleBoxEmpty_qdg3w")
+CheckButton/styles/hover = SubResource("StyleBoxEmpty_qdg3w")
+CheckButton/styles/hover_pressed = SubResource("StyleBoxEmpty_qdg3w")
+CheckButton/styles/normal = SubResource("StyleBoxEmpty_qdg3w")
+CheckButton/styles/pressed = SubResource("StyleBoxEmpty_qdg3w")
+Label/constants/outline_size = 3
+Label/font_sizes/font_size = 20
+Label/styles/normal = SubResource("StyleBoxFlat_x238d")
+VBoxContainer/constants/separation = 4
