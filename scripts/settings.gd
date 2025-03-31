@@ -78,13 +78,16 @@ func apply_settings() -> void:
 		linear_to_db(config["audio"]["master_volume"])
 	)
 	
-	
 	AudioServer.set_bus_volume_db(
 		AudioServer.get_bus_index("Music"), 
 		linear_to_db(config["audio"]["music_volume"])
-		
 	)
+	
 	AudioServer.set_bus_volume_db(
 		AudioServer.get_bus_index("SFX"), 
 		linear_to_db(config["audio"]["sfx_volume"])
 	)
+	
+	print("Master index ", AudioServer.get_bus_index("Master"))
+	print("Music index ", AudioServer.get_bus_index("Music"))
+	print("SFX index ", AudioServer.get_bus_index("SFX"))
