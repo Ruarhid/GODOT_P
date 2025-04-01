@@ -108,7 +108,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"idle_front",
-"speed": 2.0
+"speed": 5.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -163,7 +163,7 @@ animations = [{
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_je7p5"]
-radius = 6.0
+radius = 5.0
 height = 14.0
 
 [node name="Player" type="CharacterBody2D"]
@@ -171,7 +171,7 @@ script = ExtResource("1_dovo2")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_h17s1")
-animation = &"run_back"
+animation = &"idle_back"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CapsuleShape2D_je7p5")
