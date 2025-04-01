@@ -1,4 +1,6 @@
-[gd_resource type="Theme" load_steps=12 format=3 uid="uid://cjawy8cb27n0v"]
+[gd_resource type="Theme" load_steps=14 format=3 uid="uid://cjawy8cb27n0v"]
+
+[ext_resource type="StyleBox" uid="uid://yv3ire7s3p00" path="res://resources/theme/progressbar.tres" id="1_m0spp"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_d0jhy"]
 bg_color = Color(0.862745, 0.85098, 0.72549, 1)
@@ -43,6 +45,8 @@ shadow_size = 3
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_x238d"]
 draw_center = false
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_acrn7"]
+
 [resource]
 Button/constants/outline_size = 3
 Button/font_sizes/font_size = 40
@@ -67,4 +71,6 @@ CheckButton/styles/pressed = SubResource("StyleBoxEmpty_qdg3w")
 Label/constants/outline_size = 3
 Label/font_sizes/font_size = 20
 Label/styles/normal = SubResource("StyleBoxFlat_x238d")
+ProgressBar/styles/background = SubResource("StyleBoxFlat_acrn7")
+ProgressBar/styles/fill = ExtResource("1_m0spp")
 VBoxContainer/constants/separation = 4

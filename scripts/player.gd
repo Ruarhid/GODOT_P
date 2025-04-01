@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 # Константа скорости персонажа (можно менять в инспекторе или здесь)
-const SPEED = 50.0
+const SPEED = 500.0
 
 # Переменная для хранения последнего направления движения, изначально вниз
 var last_direction = Vector2.DOWN
