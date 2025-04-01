@@ -1,34 +1,39 @@
 extends CharacterBody2D
 
-
 const SPEED = 50.0
-const JUMP_VELOCITY = -400.0
+var last_direction = Vector2.DOWN  # По умолчанию вниз
+@onready var anime = $AnimatedSprite2D
 
+func get_input():
+	var input_direction = Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")
+	velocity = input_direction * SPEED 
+	# Обновляем last_direction, если есть движение
+	if input_direction != Vector2.ZERO:
+		last_direction = input_direction
 
 func _physics_process(_delta: float) -> void:
-
-	if Input.is_action_pressed("ui_right"):
-		$AnimatedSprite2D.flip_h = false
-	if Input.is_action_pressed("ui_left"):
-		$AnimatedSprite2D.flip_h = true
-
-	var directionx:= Input.get_axis("ui_left", "ui_right")
-	var directiony:= Input.get_axis("ui_up", "ui_down")
-	if directionx or directiony:
-		velocity.x = directionx * SPEED
-		velocity.y = directiony * SPEED
-	else:
-		velocity.x = move_toward(velocity.x, 0, SPEED)
-		velocity.y = move_toward(velocity.y, 0, SPEED)
-
-# Анимация
-	if velocity.y > 0:  # Движение вверх
-		$AnimatedSprite2D.play("run_front")
-	elif velocity.y < 0:  # Движение вниз
-		$AnimatedSprite2D.play("run_back")
-	elif velocity.x != 0:  # Движение влево или вправо
-		$AnimatedSprite2D.play("run_flip")  # Обычная анимация бега
-		
-
-
+	get_input()
+	update_animation(velocity)
 	move_and_slide()
+
+func update_animation(direction: Vector2):
+	if direction != Vector2.ZERO:
+		if abs(direction.x) > abs(direction.y):
+			if direction.x < 0:
+				anime.flip_h = true
+				anime.play("run_flip")
+			elif direction.x > 0:
+				anime.flip_h = false
+				anime.play("run_flip")
+		else:
+			anime.play("run_front" if direction.y > 0 else "run_back")
+	else:
+		if abs(last_direction.x) > abs(last_direction.y):
+			if last_direction.x < 0:
+				anime.flip_h = true
+				anime.play("idle_flip")
+			elif last_direction.x > 0:
+				anime.flip_h = false
+				anime.play("idle_flip")
+		else:
+			anime.play("idle_front" if last_direction.y > 0 else "idle_back")
